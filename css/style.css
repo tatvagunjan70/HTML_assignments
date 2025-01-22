@@ -102,3 +102,48 @@ p{
 a {
     text-decoration: none;
     }
+
+    .navbar{
+        height: 80px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main {
+        display: flex;
+        height: 100vh; /* Full height of the viewport */
+       
+        
+    
+    }
+    .content{
+        background-color: lightgreen;
+        flex:1;
+    }
+    .logo-navbar{
+        width: 142px;
+        height: 30px;
+        margin-left: 25px;
+        background-color: #FFFFFF;
+        
+        
+    }
+    .search-navbar{
+        height: 16px;
+        margin-left: 80px;
+        background-color: #FFFFFF;
+
+        
+    }
+    .notification-navbar{
+        width: 22px;
+        height: 21px;
+        margin-right: 25px;
+     
+    }
+    .profile{
+        width: 44px;
+height: 44px;
+margin-right: 10px;
+    }
