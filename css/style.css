@@ -107,19 +107,25 @@ a {
         height: 80px;
         background-color: #FFFFFF;
         display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 13% 87%; 
+        
     }
 
     .main {
-        display: flex;
+        display: grid;
         height: 100vh; /* Full height of the viewport */
+        grid-template-columns: 13% 87%; 
+        margin-top: 80px;
        
         
     
     }
     .content{
-        background-color: lightgreen;
+        background-color:  #FAFAFA;
         flex:1;
+        /* position: absolute; */
+        padding-left: 210px;
     }
     .logo-navbar{
         width: 142px;
@@ -136,14 +142,169 @@ a {
 
         
     }
+    .search-navbar2{
+        height: 16px;
+        margin-left: 30px;
+        background-color: #FFFFFF;
+
+        
+    }
     .notification-navbar{
         width: 22px;
         height: 21px;
         margin-right: 25px;
+        display: flex;
+        align-self: center;
      
     }
     .profile{
         width: 44px;
 height: 44px;
 margin-right: 10px;
+display: flex;
+align-self: center;
     }
+    .profile-navbar{
+        width: 210px;
+        display: flex;
+    }
+    .profile-name{
+        margin-top: 10px;
+        margin-right: 10px;
+        display: flex;
+        align-self: center;
+    }
+    .right-navbar{
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+    }
+    .serchbar{
+     display: flex;   
+     align-self: center;
+    }
+.sidebar{
+    background-color: #FFFFFF;
+    position: fixed;
+}
+
+    .side-options{
+        display: flex;
+        width: 183px;
+        height: 43px;
+        border-radius: 5px;
+    
+        margin-top: 20px;
+       margin-left: 10px;
+        background-color: #FFFFFF;
+       
+    }
+    .menu-list{
+        background-color: #FFFFFF;
+       
+    }
+    .menu-logo{
+        height: 20px;
+        width: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        align-self: center;
+    }
+    .menu-name{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-self: center;
+        
+    }
+    .sidebar
+{
+    display: flex;
+
+    
+}
+.active{
+    background-color: #FFF3F4; 
+}
+
+
+
+.content h2{
+    height: 83px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-left: 45px
+    
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;justify-content: center;
+    height: 110px;
+    border: none;
+    border-radius: 5px;
+    
+    
+}
+.card-icon{
+    height: 34px;
+    width: 34px;
+    display: flex;
+    align-items: center;
+}
+.card-body{
+    flex: 0 1 auto;
+    background-color: #FFFFFF;
+    height: 100%;
+
+}
+.card-value{
+   
+}
+.card-name{
+width: auto;
+background-color: #FFFFFF;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    background-color: #FAFAFA;
+    margin: 0px;
+    
+}
+.graph{
+    margin: 30px;
+    border-radius: 5px;
+}
+.sale-head{
+    font-size: 20px;
+    
+}
+
+.pie-chart{
+    height: 250px;
+}
+.chart{
+    height: 100%;
+}
+
+.invoice{
+    margin: 30px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+.invoice-head{
+    margin: 30px;
+}
+.invoice-btn{
+    background: #FFFFFF;
+    border: none;
+    color: #C8242F;
+    text-decoration: underline;
+}
+.invoice-table{
+    padding-left: 34px;
+    padding-right: 34px;
+}
