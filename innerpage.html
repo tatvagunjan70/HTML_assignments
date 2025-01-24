@@ -69,10 +69,209 @@
 
        <section class="content">
         <h2>Analysis</h2>
-        <div class="bg-white">
-            <h5>One Column</h5>
+        <form action="onsubmit" class="form-innerpage bg-white shadow ">
+                <div class="form-group one-column d-flex flex-column gap-3">
+                    <h3 class="bg-transparent" style="margin-top: 34px;">One Column</h3>
+                    <input type="text" class="form-control" placeholder="Name">
+                    <select name="Dropdown" id="Dropdown" class="form-control" >
+                        <option >Dropedown</option>
+                        <option >1</option>
+                        <option >2</option>
+                        <option >3</option>
+                    </select>
+                    <textarea name="multipleline" id="multipleline" class="form-control" rows="3" placeholder="Multiple Lines"></textarea>
+                </div>
+
+                <div class="form-group two-column d-flex flex-column gap-3" >
+                    <h3 class="bg-transparent">Two Column</h3>
+                    
+                    <div class="d-flex gap-2">
+                        <input type="text" class="form-control" placeholder="Name">
+                        <div class="form-floating  col-md-6 ">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="jhon Doe">
+                            <label for="floatingInput " style="background: none;">Username</label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <input type="password" class="form-control" placeholder="Password">
+                        <select name="Dropdown" id="Dropdown" class="form-control" >
+                            <option >Dropedown</option>
+                            <option >1</option>
+                            <option >2</option>
+                            <option >3</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="form-group three-column d-flex flex-column gap-3 ">
+                    <h3 class="bg-transparent">Three Coulmn</h3>
+                    <div class="d-flex gap-2 ">
+                        <div class="form-floating  col  custom-focus " >
+                            <input type="text" class="form-control" id="floatingInput" placeholder="" >
+                            <label for="floatingInput " style="background: none;">focus</label>
+                          </div>
+                        <div class="form-floating col custom-focus " >
+                            <input type="password" class="form-control" id="floatingInput" placeholder="Password" >
+                            <label for="floatingInput " style="background: none;">Password</label>
+                          </div>
+                        <div class="form-floating  col custom-focus dotted-focus dotted-column3 " >
+                            <input type="text" class="form-control" id="floatingInput" placeholder="disabled" disabled >
+                            <label for="floatingInput " style="background: none;">Disabled</label>
+                          </div>
+                    </div>
+                    
+                </div>
+
+                <div class="form-group d-flex flex-column gap-3 ">
+                    <h3 class="bg-transparent">Four Column</h3>
+                    <div class="d-flex gap-2">
+                        <div class="form-floating  col custom-focus ">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="">
+                            <label for="floatingInput " style="background: none;">Designation</label>
+                            <div class="invalid-feedback bg-transparent d-block">
+                                Enter valid data
+                              </div>
+                        </div>
+                        <div class="form-floating  col  ">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="jhon Doe">
+                            <label for="floatingInput " style="background: none;">Name</label>
+                            <div class="valid-feedback bg-transparent d-block">
+                                Enter full name as per ID
+                              </div>
+                        </div>
+                        <div class="form-floating  col  ">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="jhon Doe">
+                            <label for="floatingInput " style="background: none;">Username</label>
+                        </div>
+                        <div class="form-group col d-flex flex-column align-items-stretch flex-grow-1  ">
+                            <select name="Dropdown" id="Dropdown" class="form-control col" >
+                                <option >Dropedown</option>
+                                <option >1</option>
+                                <option >2</option>
+                                <option >3</option>
+
+                            </select> 
+                            <div class="valid-feedback d-block">
+                                Select option
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group d-flex flex-column gap-3">
+                    <h3>Other Design Elements</h3>
+                    <div class="d-flex flex-column  gap-3 ">
+                        <h5>File Upload</h5>
+                        <div class="d-flex gap-2 align-items-center ">
+                            <label for="file-browse" class=" d-flex justify-content-around gap-2 border border-danger rounded-pill p-2">
+                                <img src="images/cloud-upload-icon.svg" alt=""><span>Upload</span>
+                            </label>
+                            <span class="text-secondary">no file uploded</span>
+                            <input type="file" class="form-control d-none" id="file-browse">
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column gap-3">
+                        <h5>Radio Button</h5>
+                        <div class="d-flex gap-5 custom-check">
+                            <div class="form-check d-flex gap-2 ">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Option 1
+                                </label>
+                              </div>
+                            <div class="form-check d-flex gap-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Option 2
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column gap-3">
+                        <h5>Checkbox</h5>
+                        <div class="d-flex gap-5 custom-check">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Option 1
+                              </label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="flexCheckCheacked">
+                            <label class="form-check-label" for="flexCheckCheacked">
+                                Option 2
+                              </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column gap-3">
+                        <h5>snackbar</h5>
+                        <div class="d-flex gap-4">
+                            <div class="alert alert-danger   col " style="background: none;"  role="alert">
+                                <img src="images/error-icon.svg" alt="" class="icon-small"> 
+                                This is an error messgage!
+                              </div>
+                            <div class="alert alert-primary   col " style="background: none;"  role="alert">
+                                <img src="images/info-icon.svg" alt="" class="icon-small"> 
+                                This is an information messgage!
+                              </div>
+                        </div>
+                        <div class="d-flex gap-4">
+                            <div class="alert alert-warning   col " style="background: none;"  role="alert">
+                                <img src="images/warning-icon.svg" alt="" class="icon-small"> 
+                                This is an warning messgage!
+                              </div>
+                            <div class="alert alert-success  col " style="background: none;"  role="alert">
+                                <img src="images/success-icon.svg" alt="" class="icon-small"> 
+                                This is an success messgage!
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column gap-3">
+                        <h5>Call to action</h5>
+                        <div class="d-flex  gap-4">
+                            <button type="button" class="btn btn-outline-danger  rounded-pill">Primary</button>
+                            <button type="button" class="btn btn-outline-danger rounded-pill">Secondary</button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column gap-3 mb-5">
+                        <h5>Tabs</h5>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum accusantium asperiores doloribus iste sed aut illo incidunt quis perspiciatis quisquam totam, quo est autem maxime, qui fuga ipsam quos assumenda placeat voluptatem aliquam ad hic temporibus.</div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quibusdam excepturi aspernatur voluptatem vel repudiandae veniam beatae ipsam quidem vitae asperiores, unde ut fugit, eos sit. Unde veritatis dolorum nobis laboriosam beatae explicabo laborum, qui odit.</div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem mollitia praesentium accusamus quae ullam eius voluptates ad! Itaque doloremque incidunt dolore ullam nesciunt corporis inventore similique repudiandae temporibus optio. Magnam ipsa deserunt, repudiandae ex animi perspiciatis!</div>
+                          </div>
+                          
+                           
+
+                        </div>
+                    </div>
+
+                </div>
+        </form>
         </div>
        </section>
     </div>
+
+</div>
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

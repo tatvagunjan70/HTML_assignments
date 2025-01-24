@@ -19,9 +19,7 @@
     padding-top: 200px;
     padding-left: 100px;
 }
-.left {
-    
-}
+
 .right {
     margin-top: 34px;
 }
@@ -126,6 +124,8 @@ a {
         flex:1;
         /* position: absolute; */
         padding-left: 210px;
+        padding-right: 34px;
+        border-radius: 5px;
     }
     .logo-navbar{
         width: 142px;
@@ -262,9 +262,6 @@ align-self: center;
     height: 100%;
 
 }
-.card-value{
-   
-}
 .card-name{
 width: auto;
 background-color: #FFFFFF;
@@ -309,4 +306,85 @@ background-color: #FFFFFF;
 .invoice-table{
     padding-left: 34px;
     padding-right: 34px;
+}
+.form-innerpage{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.label-on{
+    outline: none;
+    position: absolute;
+    margin-left: 23px;
+    font-size: 10px;
+    background: none;
+}
+
+.custom-focus .form-control:focus {
+    border-color:#C8242F; /* Change the border color */
+    box-shadow: 0 0 0 0.2rem rgba(255, 87, 51, 0.25); /* Change the shadow color */
+    outline: none; /* Remove the default outline */
+}
+.dotted-focus .form-control:focus {
+    border-color: #C8242F; /* Change the border color */
+    border-style: dashed;
+    box-shadow: 0 0 0 0.2rem rgba(255, 87, 51, 0.25); /* Change the shadow color */
+    outline: v thin dotted; /* Remove the default outline */
+}
+
+.dotted-column3 .form-control{
+    border-style: dashed;
+}
+.invlaid-feedback{
+    display: none;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: .875em;
+  color: #dc3545;
+}
+.valid-feedback{
+  
+   display: none;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: .875em;
+  color: #ADADAD ;
+}
+.custom-upload{
+    border-radius: 18px;
+}
+.custom-check .form-check-input:checked {
+    background-color: #C8242F;
+    border-color: #C8242F;
+    box-shadow: 0 0 0 0.2rem rgba(255, 87, 51, 0.25);
+}
+.icon-small{
+    width: 25px;
+    height: 25px;
+    background: none;
+}
+.form-group, .form-control .form-floating{
+background: none;
+}
+.btn-outline-danger{
+    border-radius: 50%;
+}
+.nav-tabs{
+    border-bottom: 1px solid #C8242F;
+}
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+    border-top: 2px solid #C8242F; /* Top border */
+    border-left: 2px solid #C8242F; /* Left border */
+    border-right: 2px solid #C8242F; /* Right border */
+    border-bottom: none;
+    box-shadow: 0 -4px 4px -4px #C8242F, /* Top shadow */
+    -4px 0 4px -4px #C8242F, /* Left shadow */
+    4px 0 4px -4px #C8242F; /* Right shadow */
+}
+.tab-content .active{
+    background-color: #FFFFFF;
 }
