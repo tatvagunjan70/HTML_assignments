@@ -23,7 +23,7 @@
 
             <span class="login-text">Login into your account</span>
 
-            <form action="" class="login-form d-flex flex-column gap-3">
+            <form action="" class="login-form d-flex flex-column gap-3" onsubmit="return handleLogin(event)">
                 <div class="d-flex flex-column gap-2">
                     <div class="form-floating custom-focus" >
                         <input type="text" class="form-control" id="floatingInput" placeholder="" >
@@ -36,6 +36,7 @@
                 </div>
 
               <div class="d-flex justify-content-between align-items-center">
+              
                 <button type="submit" class="rounded-pill">Login</button>
                 <a href=# class="forgot-password"> Forgot Password ? </a>
 
@@ -50,5 +51,11 @@
             </div>
         </div>
     </div>
+    <script>
+      function handleLogin(event) {
+          event.preventDefault(); // Prevent the default form submission
+          window.location.href = '/dashboard.html'; // Redirect to deshboard.html
+      }
+  </script>
 </body>
 </html>

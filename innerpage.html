@@ -8,33 +8,35 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="navbar fixed-top  ">
-        <div class="left-navbar bg-white">
-            <button class="btn" data-bs-toggle="collapse" href="#collapse-example" role="button" aria-expanded="false" aria-controls="collapse-example">  
+    <header class="navbar d-flex fixed-top  ">
+        <div class="left-navbar d-flex bg-white">
+            <button class="btn" data-bs-toggle="collapse" href="#collapse-example" role="button" aria-expanded="false"
+                aria-controls="collapse-example">
                 <img src="images/menu-bar.svg" alt="menu" class="menu bg-white">
             </button>
-            
-            <img src="images/logo.svg" alt="company logo" class="logo-navbar bg-white">
-           
+
+            <img src="images/logo.svg" alt="company logo" class="logo-navbar d-flex d-md-block d-none bg-white">
+            <img src="images/favicon.ico" alt="company logo" class="d-flex  d-flex d-md-none d-block "
+                style="max-height: 30px;">
+
         </div>
-        
-    <div class="right-navbar bg-white">
-        <div class="serchbar bg-white">
-            <img src="images/search-icon.svg" alt="search" class="search-navbar bg-white">
-            <p class="search-navbar2 bg-white">search</p>
+
+        <div class="right-navbar bg-white">
+            <div class="serchbar bg-white">
+                <img src="images/search-icon.svg" alt="search" class="search-navbar bg-white">
+                <p class="search-navbar2 bg-white">search</p>
+            </div>
+            <div class="profile-navbar bg-white">
+                <img src="images/notification-icon.svg" alt="notification" class="notification-navbar">
+                <img src="images/profile.png" alt="profile" class="profile">
+                <p class="profile-name">john doe</p>
+                <img src="images/downward-arrow.svg" alt="downward-arrow" class="downward-arrow">
+            </div>
+
         </div>
-        <div class="profile-navbar bg-white">
-            <img src="images/notification-icon.svg" alt="notification" class="notification-navbar">
-            <img src="images/profile.png" alt="profile" class="profile">
-            <p class="profile-name">john doe</p>
-            <img src="images/downward-arrow.svg" alt="downward-arrow" class="downward-arrow">
-        </div>
-        
-    </div>
-   
+
 
     </header>
-
     <div class="main d-flex"  >
         <section class=" collapse collapse-horizontal" id="collapse-example">
             <ul class="list-unstyled menu-list">
@@ -70,7 +72,7 @@
             </ul>
         </section>
 
-       <section class="content">
+       <section class="content w-100 p-4">
         <h2>Analysis</h2>
         <form action="onsubmit" class="form-innerpage bg-white shadow ">
                 <div class="form-group one-column d-flex flex-column gap-3">
@@ -88,15 +90,15 @@
                 <div class="form-group two-column d-flex flex-column gap-3" >
                     <h3 class="bg-transparent">Two Column</h3>
                     
-                    <div class="d-flex gap-2">
-                        <input type="text" class="form-control" placeholder="Name">
-                        <div class="form-floating  col-md-6 ">
+                    <div class="d-flex gap-2 row2">
+                        <input type="text" class="form-control col" placeholder="Name">
+                        <div class="form-floating  col ">
                             <input type="text" class="form-control" id="floatingInput" placeholder="jhon Doe">
                             <label for="floatingInput " style="background: none;">Username</label>
                         </div>
                     </div>
 
-                    <div class="d-flex gap-2">
+                    <div class="d-flex gap-2 row2">
                         <input type="password" class="form-control" placeholder="Password">
                         <select name="Dropdown" id="Dropdown" class="form-control" >
                             <option >Dropedown</option>
@@ -110,7 +112,7 @@
 
                 <div class="form-group three-column d-flex flex-column gap-3 ">
                     <h3 class="bg-transparent">Three Coulmn</h3>
-                    <div class="d-flex gap-2 ">
+                    <div class="d-flex gap-2 row2 ">
                         <div class="form-floating  col  custom-focus " >
                             <input type="text" class="form-control" id="floatingInput" placeholder="" >
                             <label for="floatingInput " style="background: none;">focus</label>
@@ -129,7 +131,7 @@
 
                 <div class="form-group d-flex flex-column gap-3 ">
                     <h3 class="bg-transparent">Four Column</h3>
-                    <div class="d-flex gap-2">
+                    <div class="d-flex gap-2 row2">
                         <div class="form-floating  col custom-focus ">
                             <input type="text" class="form-control" id="floatingInput" placeholder="">
                             <label for="floatingInput " style="background: none;">Designation</label>
@@ -214,7 +216,7 @@
 
                     <div class="d-flex flex-column gap-3">
                         <h5>snackbar</h5>
-                        <div class="d-flex gap-4">
+                        <div class="d-flex gap-4 row2">
                             <div class="alert alert-danger   col " style="background: none;"  role="alert">
                                 <img src="images/error-icon.svg" alt="" class="icon-small"> 
                                 This is an error messgage!
@@ -224,7 +226,7 @@
                                 This is an information messgage!
                               </div>
                         </div>
-                        <div class="d-flex gap-4">
+                        <div class="d-flex gap-4  row2">
                             <div class="alert alert-warning   col " style="background: none;"  role="alert">
                                 <img src="images/warning-icon.svg" alt="" class="icon-small"> 
                                 This is an warning messgage!

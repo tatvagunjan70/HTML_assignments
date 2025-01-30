@@ -198,6 +198,7 @@ a {
   color: black;
   display: flex;
   align-self: center;
+  background-color: transparent;
 }
 
 .sidebar {
@@ -221,6 +222,8 @@ a {
   justify-content: center;
   border: none;
   border-radius: 5px;
+  margin-bottom: 10px;
+  width: 200px;
 }
 
 .card-icon {
@@ -406,6 +409,12 @@ a {
     color: #BABABA;
     border-radius: 5px;
     padding: 5px;
+}
+@media only  screen and (max-width :695px) {
+  .row2{
+    flex-direction: column;
+  }
+  
 }
 
 @media only screen and (max-width: 915px) {
